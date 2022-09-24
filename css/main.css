@@ -168,7 +168,6 @@ body {
 
 .mobile-menu-list__link {
   display: block;
-  margin-bottom: 35px;
   color: var(--title-text-color);
 }
 
