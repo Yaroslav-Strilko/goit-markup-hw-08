@@ -11,7 +11,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity var(--transition-dur-and-func),
-    visibility var(--transition-dur-and-func);
+  visibility var(--transition-dur-and-func);
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -20,13 +20,21 @@
 }
 
 .mobile-menu__container {
+
   position: relative;
   padding-left: 25px;
-  //  position: absolute;
-  // position: relative;
-  background-color: aquamarine;
+ 
 }
-
+// За допомогою флексів хочу роздвинути два div mobile-menu__flex-container 
+.lmobile-menu__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobile-menu__flex-container{
+   display: block;
+}
+//  END  За допомогою флексів хочу роздвинути два div mobile-menu__flex-container 
 .mobile-menu__close-btn {
   position: absolute;
   top: 21px;
@@ -38,37 +46,98 @@
 }
 
 .mobile-menu__close-icon {
-  width: 19px;
-  height: 19px;
+  transition: fill var(--transition-dur-and-func);
+  // width: 19px;
+  // height: 19px;
+
+  &:hover,
+  &:focus
+  {
+  fill: var(--accent-color);
+  }
+
 }
 
 .mobile-menu-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
   margin-top: 48px;
   position: relative;
   font-size: 40px;
 
-  // display: flex;
-  // align-items: center;
-  // column-gap: 50px;
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  // color: var(--title-text-color);
+  margin-bottom: 302px ;
+
 }
 
 .mobile-menu-list__link {
   display: block;
-  // margin-bottom: 35px;
   color: var(--title-text-color);
-  // padding-bottom: 35px;
+   
+   &:hover,
+   &:focus {
+    color: var(--accent-color);
+  }
 
-}
-.mobile-menu-list:not(:last-child) {
-  margin-bottom: 35px;
 }
 
 .mobile-menu-list__item--here {
   color: var(--accent-color);
+}
+.mobile-menu-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.mobile-menu-contact__link-phone {
+  font-size: 34px;
+  color: var(--primary-text-color);
+  
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+}
+
+.mobile-menu-contact__link-email {
+  font-size: 24px;
+  color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+}
+
+.mobile-menu-social{
+  display: flex;
+  margin-top: 64px;
+  padding-bottom: 48px;
+  
+
+}
+.mobile-menu-social__item{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu-social__item-last{
+  padding-left: 10px;
+}
+.mobile-menu-social__link{
+   font-size: 18px;
+   color: var(--accent-color);
+   
+}
+
+@media screen  and (min-width: 768px) {
+  .open-mobile-menu-btn{
+  display: none;
 }

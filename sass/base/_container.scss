@@ -1,8 +1,7 @@
 .container{
   padding-left: 15px;
   padding-right: 15px;
-  background-color: aqua;
-}
+  }
 
 @media screen and (min-width: 480px) {
   .container {
@@ -15,6 +14,7 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
+    height: 80px;
   }
 }
 

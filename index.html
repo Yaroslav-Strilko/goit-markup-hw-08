@@ -25,7 +25,7 @@
       <div class="container page-header__container">
         <div class="page-header__navigation ">
           <nav>
-            <a href="" class="logo link">
+            <a href="" class="logo logo__tablet link">
               <span style="color: #2196f3">Web</span
               ><span style="color: #000000">Studio</span>
             </a>
@@ -36,6 +36,7 @@
                 <use href="./images/sprite.svg#icon-burger"></use>
               </svg>
           </button> 
+          </div>
           <ul class="menu list">
             <li class="menu__item--here">
               <a class="menu__link link menu__link--here" href="">Студія</a>
@@ -47,7 +48,8 @@
               <a class="menu__link link" href="">Контакти</a>
             </li>
           </ul>
-        </div>
+        
+        
         <ul class="contact list">
           <li class="contact__item contact__item--first">
             <a
@@ -80,14 +82,19 @@
           </li>
         </ul>
       </div>
+      <!--========== Мобільне меню ========== -->
       <div class="mobile-menu" data-menu>
+        
         <div class="conteiner mobile-menu__container" data-menu>
            <button  class="mobile-menu__close-btn" data-modal-close>
              <svg class="mobile-menu__close-icon" width="19px" height="19px">
                <use href="./images/sprite.svg#icon-x"</use>
              </svg>
            </button>
-          <ul class="mobile-menu-list list">
+        <!--========== Список мобільного меню ========== -->
+          <div class="mobile-menu__flex">
+          <div class="mobile-menu__flex-container">
+        <ul class="list mobile-menu-list ">
             <li >
               <a class="link mobile-menu-list__link  mobile-menu-list__item--here" href="">Студія</a>
             </li>
@@ -95,12 +102,36 @@
               <a class="link mobile-menu-list__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li>
-              <a class="mobile-menu-list__link link" href="">Контакти</a>
+              <a class="link mobile-menu-list__link " href="">Контакти</a>
             </li>
           </ul>
+          </div>
+          <!--========== Список контактів мобільного меню ========== -->
+          <div class="mobile-menu__flex-container" >
+          <ul class="list mobile-menu-contact">
+           <li>
+            <a class="link mobile-menu-contact__link-phone" href="tel:+380961111111">
+               +38 096 111 11 11
+            </a>
+            </li>
+           <li><a
+              class="link mobile-menu-contact__link-email"
+              href="mailto:info@devstudio.com">
+               info@devstudio.com</a>
+           </li>
+        </ul>
+           <!--========== Список соціальних контактів мобільного меню ========== -->
+        <ul class="list mobile-menu-social"  >
+          <li class="mobile-menu-social__item"><a class="link mobile-menu-social__link" href="">Instagram</a></li>
+          <li class="mobile-menu-social__item"><a class="link mobile-menu-social__link" href="">Twitter</a></li>
+          <li class="mobile-menu-social__item"><a class="link mobile-menu-social__link" href="">Facebook</a></li>
+          <li class="mobile-menu-social__item-last"><a class="link mobile-menu-social__link" href="">Linkedin</a></li>
+        </ul>
+          </div>
+        </div>
         </div>
       </div>
-
+        
       
     </header>
     <!-- Головна частина-->

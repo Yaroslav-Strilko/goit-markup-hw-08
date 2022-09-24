@@ -141,7 +141,16 @@ body {
 .mobile-menu__container {
   position: relative;
   padding-left: 25px;
-  background-color: aquamarine;
+}
+
+.lmobile-menu__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-menu__flex-container {
+  display: block;
 }
 
 .mobile-menu__close-btn {
@@ -155,27 +164,76 @@ body {
 }
 
 .mobile-menu__close-icon {
-  width: 19px;
-  height: 19px;
+  transition: fill var(--transition-dur-and-func);
+}
+.mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .mobile-menu-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
   margin-top: 48px;
   position: relative;
   font-size: 40px;
+  margin-bottom: 302px;
 }
 
 .mobile-menu-list__link {
   display: block;
   color: var(--title-text-color);
 }
-
-.mobile-menu-list:not(:last-child) {
-  margin-bottom: 35px;
+.mobile-menu-list__link:hover, .mobile-menu-list__link:focus {
+  color: var(--accent-color);
 }
 
 .mobile-menu-list__item--here {
+  color: var(--accent-color);
+}
+
+.mobile-menu-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.mobile-menu-contact__link-phone {
+  font-size: 34px;
+  color: var(--primary-text-color);
+}
+.mobile-menu-contact__link-phone:hover, .mobile-menu-contact__link-phone:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu-contact__link-email {
+  font-size: 24px;
+  color: var(--primary-text-color);
+}
+.mobile-menu-contact__link-email:hover, .mobile-menu-contact__link-email:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu-social {
+  display: flex;
+  margin-top: 64px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu-social__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu-social__item-last {
+  padding-left: 10px;
+}
+
+.mobile-menu-social__link {
+  font-size: 18px;
   color: var(--accent-color);
 }
 
@@ -457,37 +515,33 @@ body {
 /*===============END Модальна форма ================*/
 /* ======= ----- END Модальне вікно--------- =========== */
 /* ==========HEADER================== */
-.menu {
-  display: none;
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .contact__item {
+    display: none;
+  }
+  .open-mobile-menu-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .page-header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
-
-.contact__item {
-  display: none;
-}
-
-.page-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.page-header__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.open-mobile-menu-btn {
-  line-height: 0;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-.open-mobile-menu-btn__icon {
-  width: 40px;
-  height: 40px;
-}
-
 @media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
     display: none;
@@ -503,41 +557,18 @@ body {
     color: var(--title-text-color);
   }
   .contact__item {
-    display: block;
+    display: flex;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 10px;
   }
   .page-header__container {
     display: flex;
   }
 }
-.contact {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-}
-
-.contact-email-phone {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  transition: color var(--transition-dur-and-func);
-}
-.contact-email-phone:hover svg, .contact-email-phone:focus svg {
-  fill: var(--accent-color);
-}
-.contact-email-phone:hover, .contact-email-phone:focus {
-  cursor: pointer;
-  color: var(--accent-color);
-}
-
-.icon-contact:hover {
-  cursor: pointer;
-  color: var(--accent-color);
-}
-
 /* ============ Наша команда  ==================*/
 /* .item-our-advant {
   display: flex;
