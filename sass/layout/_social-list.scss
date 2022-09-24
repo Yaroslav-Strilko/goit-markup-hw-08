@@ -1,0 +1,41 @@
+/* ========== Іконки соцмереж ========== */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: background-color var(--transition-dur-and-func);
+
+&:hover,
+&:focus {
+  background-color: var(--accent-color);
+}
+}
+.social-list-item {
+}
+
+/* Створюємо  */
+/* Створюємо нижній фон для іконок соцмереж */
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-color-grey);
+  transition: fill var(--transition-dur-and-func);
+
+.social-list-link:hover &,
+.social-list-link:focus & {
+  fill: var(--white);
+}
+}

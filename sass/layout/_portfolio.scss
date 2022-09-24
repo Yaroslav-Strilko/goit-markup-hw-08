@@ -1,0 +1,120 @@
+/*=============== Блок портфоліо ================*/
+.portfolio-button-text {
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  border: 0;
+  font-family: $primary-font;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--title-text-color);
+  background-color: rgba(245, 244, 250, 1);
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+}
+
+/* Кнопка */
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-button-text:hover,
+.portfolio-button-text:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* border-radius: 4px; */
+}
+
+.portfolio-button-current {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
+
+.menu-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.work-portfolio-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.work-portfolio-text {
+  margin: top 4px;
+}
+
+.work-portfolio-content {
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio_cat {
+  font-weight: 400;
+  line-height: 1.88;
+}
+
+.work-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  & > .work-portfolio-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.work-portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-portfolio-overlay-center {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+
+  .work-portfolio-link:hover &,
+  .work-portfolio-link:focus & {
+    transform: translateY(0%);
+  }
+}
+.work-portfolio-link {
+  display: block;
+  transition: box-shadow var(--transition-dur-and-func); /* задаємо фукцію на весь блок для тіні */
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}

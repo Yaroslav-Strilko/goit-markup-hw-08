@@ -1,0 +1,23 @@
+/* ==========Наші переваги================= */
+.section-our-advantages {
+
+}
+
+.content-our-advantages {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.bgc-our-advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.icon-our-advantages {
+  width: 70px;
+  height: 70px;
+}
+

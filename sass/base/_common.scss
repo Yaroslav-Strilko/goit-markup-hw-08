@@ -1,0 +1,46 @@
+/* Скидаємо налаштування від браузера */
+/* Скидаємо налаштування заголовків */
+h1,
+h2,  
+h3,
+h4,
+h5,
+h6,
+/* Скидаємо налаштування абзаців */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/* Скидаємо налаштування списків */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/* Прибираємо підкреслення під посиланнями */
+.link {
+  text-decoration: none;
+}
+/* Прибираємо кропки в списках */
+.list {
+  list-style: none;
+}
+/* Прибираємо відступи картинок у списковіх елементах */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* При наведені на кнопку зміна курсору */
+button {
+  cursor: pointer;
+}
+/* Задаемо основні параметри сторінки */
+body {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  font-family: $primary-font;
+}
