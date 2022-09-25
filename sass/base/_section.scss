@@ -3,11 +3,11 @@
 /* Задаємо основні параметри контейнеру */
 
 .page {
-  background: var(--white);
+  background: var(--white); 
 }
 
-.section-standard {
-@extend %section;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-}
+// .section-standard {
+// // @extend %section;
+//   // padding-top: 94px;
+//   // padding-bottom: 94px;
+// }
