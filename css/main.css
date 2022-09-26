@@ -110,12 +110,33 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
-    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1170px;
+  }
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    margin-right: 96px;
   }
 }
 .mobile-menu {
@@ -242,6 +263,57 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .title-first {
+    margin: 0 auto 30px;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-first {
+    margin: 0 auto 30px;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-first {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+.section-title-third {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.section-title-second {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
 /* Кнопка */
 .button:hover,
 .button:focus {
@@ -262,58 +334,6 @@ body {
   transition: background-color var(--transition-dur-and-func);
 }
 
-.title-first {
-  margin: 0 auto 30px;
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--title-color);
-}
-
-.section-title-third {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-}
-
-.section-title-second {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  line-height: 1.19;
-}
-
-@media screen and (min-width: 480px) {
-  .logo {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-    margin-right: 96px;
-  }
-}
 .section-text {
   display: flex;
   gap: 30px;
@@ -562,9 +582,8 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .page-header__container {
     height: 80px;
-    background-color: var(--white);
   }
   .page-header {
     border: 1px solid #ececec;
@@ -654,6 +673,72 @@ body {
   }
   .contact__item {
     display: flex;
+  }
+}
+/* ======Ефективні рішення========== */
+@media screen and (max-width: 767px) {
+  .main-bg {
+    background-color: #212121;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile_main_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .main-bg {
+    background-image: url("../images/mobile_main_bg@2x.jpg");
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 198px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-bg {
+    max-width: 768px;
+    background-image: url("../images/tablet_main_bg.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-bg {
+    background-image: url("../images/tablet_main_bg@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .main-bg {
+    max-width: 1600px;
+    background-image: url(../images/main_bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-bg {
+    background-image: url("../images/main_bg@2x.jpg");
   }
 }
 /* ============ Наша команда  ==================*/
@@ -772,23 +857,6 @@ body {
   fill: var(--primary-text-color);
   margin-right: 10px;
   transition: fill var(--transition-dur-and-func);
-}
-
-/* ======Ефективні рішення========== */
-.main-bg {
-  background-color: #212121;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.main-section {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 /* ========== Іконки соцмереж ========== */
