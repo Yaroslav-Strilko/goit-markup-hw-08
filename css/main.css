@@ -275,6 +275,9 @@ body {
     text-transform: uppercase;
     color: var(--title-color);
   }
+  .section-title-second {
+    font-size: 28px;
+  }
 }
 @media screen and (min-width: 768px) {
   .title-first {
@@ -288,14 +291,28 @@ body {
     text-transform: uppercase;
     color: var(--title-color);
   }
+  .section-title-second {
+    font-size: 28px;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .title-first {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
+  .section-title-second {
+    font-size: 36px;
+  }
 }
+.section-title-second {
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
 .section-title-third {
   margin-bottom: 10px;
   font-weight: 700;
@@ -303,15 +320,6 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
-}
-
-.section-title-second {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
 }
 
 /* Кнопка */
@@ -332,14 +340,6 @@ body {
   color: var(--white);
   background-color: var(--accent-color);
   transition: background-color var(--transition-dur-and-func);
-}
-
-.section-text {
-  display: flex;
-  gap: 30px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 /* ======= --------Модальне вікно--------- =========== */
@@ -706,6 +706,7 @@ body {
   .main-bg {
     max-width: 768px;
     background-image: url("../images/tablet_main_bg.jpg");
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -741,6 +742,48 @@ body {
     background-image: url("../images/main_bg@2x.jpg");
   }
 }
+/* ==========Наші переваги================= */
+@media screen and (max-width: 767px) {
+  .section-our-advantages__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-our-advantages__list {
+    flex-wrap: wrap;
+  }
+  .content-our-advantages {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-our-advantages {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.section-our-advantages__list {
+  display: flex;
+  gap: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.bgc-our-advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.icon-our-advantages {
+  width: 70px;
+  height: 70px;
+}
+
 /* ============ Наша команда  ==================*/
 /* .item-our-advant {
   display: flex;
@@ -749,12 +792,29 @@ body {
   flex-wrap: wrap;
   column-gap: 30px;
 } */
+@media screen and (max-width: 767px) {
+  .item-our-advant {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .item-our-advant {
+    flex-wrap: wrap;
+  }
+  .employee {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .section-our-advant {
   background-color: var(--background-color-grey);
 }
 
 .employee {
-  flex-basis: calc((100% - 90px) / 4);
   background-color: var(--white);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -787,26 +847,22 @@ body {
   text-align: center;
 }
 
-/* ==========Наші переваги================= */
-.content-our-advantages {
-  flex-basis: calc((100% - 90px) / 4);
-}
-
-.bgc-our-advantages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-}
-
-.icon-our-advantages {
-  width: 70px;
-  height: 70px;
-}
-
 /* ==========Чим ми займаємося================= */
+@media screen and (max-width: 767px) {
+  .our-work-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-work-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-work-section {
+    display: flex;
+  }
+}
 .section-standard.about {
   padding-top: 0;
 }
@@ -818,6 +874,27 @@ body {
 }
 
 /* ====Постійні клієнті===== */
+@media screen and (max-width: 767px) {
+  .client {
+    flex-wrap: wrap;
+  }
+  .client-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .client {
+    flex-wrap: wrap;
+  }
+  .client-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
 .client {
   display: flex;
   justify-content: center;
@@ -839,10 +916,6 @@ body {
 }
 .client-link:hover svg, .client-link:focus svg {
   fill: var(--accent-color);
-}
-
-.client-item {
-  flex-basis: calc((100% - 150px) / 6);
 }
 
 .client-link-icon {
@@ -895,7 +968,34 @@ body {
 }
 
 /* -------FOOTER------------- */
-/*  */
+@media screen and (max-width: 767px) {
+  .container-footer {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .container-footer__logo-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-footer {
+    flex-direction: flex;
+  }
+  .container-footer__tablet {
+    flex-basis: calc((100% - 165px) / 2);
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -910,6 +1010,7 @@ body {
 }
 
 .address {
+  display: flex;
   font-style: normal;
 }
 
@@ -918,6 +1019,7 @@ body {
 }
 
 .logo-footer {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -948,11 +1050,21 @@ body {
 }
 
 /* ========== Іконки соцмереж підвал ========== */
-.container-social-footer {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .container-social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .container-social-footer {
+    margin-left: 70px;
+  }
+}
 .social-title-footer {
+  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -986,10 +1098,36 @@ body {
 
 /* ==========END Іконки соцмереж --- підвал ========== */
 /* ========== Підпишиться на розсилку --- підвал ========== */
-.subscribe-footer {
-  margin-left: auto;
+@media screen and (max-width: 767px) {
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .subscribe-form-input {
+    width: 450px;
+  }
+  .subscribe-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .subscribe-form-field {
+    margin-right: 12px;
+  }
+  .subscribe-form-input {
+    width: 358px;
+  }
+  .subscribe-footer {
+    margin-left: auto;
+  }
+  .subscribe-form {
+    display: flex;
+  }
+}
 .subscribe-form-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -999,21 +1137,12 @@ body {
   color: var(--white);
 }
 
-.subscribe-form {
-  display: flex;
-}
-
-.subscribe-form-field {
-  margin-right: 12px;
-}
-
 .subscribe-form-title {
   display: flex;
 }
 
 .subscribe-form-input {
   box-sizing: border-box;
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   background: none;

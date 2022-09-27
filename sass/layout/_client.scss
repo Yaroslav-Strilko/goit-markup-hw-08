@@ -1,11 +1,47 @@
 /* ====Постійні клієнті===== */
+// 0px - 767px
+@media screen and (max-width: 767px) {
+
+
+.client {
+  flex-wrap: wrap;
+}
+.client-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+}
+
+@media screen  and (min-width: 768px) {
+
+.client {
+  flex-wrap: wrap;
+}
+.client-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+.client-item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+}
+
+
 .client {
   @include flexCenter;
   // display: flex;
   // align-items: center;
   // justify-content: center;
-  gap: 30px;
+   gap: 30px;
 }
+// .client-item {
+//   flex-basis: calc((100% - 150px) / 6);
+// }
 
 .client-link {
   @include flexCenter;
@@ -29,9 +65,8 @@
   }
 }
 
-.client-item {
-  flex-basis: calc((100% - 150px) / 6);
-}
+
+
 .client-link-icon {
   width: 106px;
   fill: var(--primary-color-grey);

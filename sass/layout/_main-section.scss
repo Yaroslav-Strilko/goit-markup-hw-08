@@ -40,8 +40,9 @@
 
 
 .main-bg {
-max-width: 768px;
+ max-width: 768px;
 background-image: url('../images/tablet_main_bg.jpg');
+background-repeat: no-repeat;
 }
 
 
@@ -70,7 +71,7 @@ background-image: url('../images/tablet_main_bg.jpg');
     @include flexCenter(flex, center, center );
     padding-top: 200px;
     padding-bottom: 200px;
-  }
+   }
 
 .main-bg {
   

@@ -1,9 +1,39 @@
 /* ========== Іконки соцмереж підвал ========== */
-.container-social-footer {
+
+@media screen and (max-width: 767px) {
+
+  .container-social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+}
+
+// .social-title-footer {
+//   text-align: center;
+// }
+}
+
+@media screen  and (min-width: 768px) {
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  .container-social-footer {
   margin-left: 70px;
 }
 
+}
+
+
+
+
+
+
 .social-title-footer {
+  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;

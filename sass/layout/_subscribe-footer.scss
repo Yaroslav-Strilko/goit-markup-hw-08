@@ -1,8 +1,58 @@
 /* ========== Підпишиться на розсилку --- підвал ========== */
 
+@media screen and (max-width: 767px) {
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.subscribe-form-input {
+  width: 450px;
+  
+}
+
+.subscribe-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // gap: 20px;
+}
+
+}
+
+@media screen  and (min-width: 768px) {
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+.subscribe-form-field {
+  margin-right: 12px;
+}
+
+.subscribe-form-input {
+  width: 358px;
+  }
+
 .subscribe-footer {
   margin-left: auto;
 }
+
+.subscribe-form {
+  display: flex;
+}
+
+}
+
+
+
+
+
 .subscribe-form-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -12,18 +62,15 @@
   color: var(--white);
 }
 
-.subscribe-form {
-  display: flex;
-}
-.subscribe-form-field {
-  margin-right: 12px;
-}
+
+
+
 .subscribe-form-title {
   display: flex;
 }
 .subscribe-form-input {
   box-sizing: border-box;
-  width: 358px;
+  // width: 358px;
   height: 50px;
   padding-left: 16px;
   background: none;
