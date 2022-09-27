@@ -25,6 +25,24 @@
 
 @media screen  and (min-width: 768px) {
 
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.subscribe-form-input {
+  width: 450px;
+  
+}
+
+.subscribe-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // gap: 20px;
+}
 
 }
 
@@ -40,12 +58,17 @@
   }
 
 .subscribe-footer {
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
 .subscribe-form {
   display: flex;
+  flex-direction: row;
 }
+
 
 }
 
