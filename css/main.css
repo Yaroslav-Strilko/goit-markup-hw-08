@@ -1322,6 +1322,7 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .portfolio_cat {
@@ -1362,6 +1363,9 @@ body {
 }
 
 .work-portfolio-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   display: block;
   transition: box-shadow var(--transition-dur-and-func); /* задаємо фукцію на весь блок для тіні */
 }
