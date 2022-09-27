@@ -2,6 +2,7 @@
 @media screen and (max-width: 767px) {
 
 .container-footer {
+  display: flex;
   flex-direction: column;
   gap: 60px;
 
@@ -17,6 +18,12 @@
 .logo-footer {
   display: flex;
   justify-content: center;
+}
+
+.container-footer__tablet {
+     display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .footer-list{

@@ -11,36 +11,50 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+       <link rel="stylesheet" href="./css/main.min.css" />
+    
   </head>
+  <body class="page">
 
-<body class="page">
-  <header class="header">
-      <div class="container page-header-container">
-        <div class="page-navigation">
-          <nav>
-            <a href="https://yaroslav-strilko.github.io/goit-markup-hw-07/" class="logo link">
+    <!--==================== Шапка сайту ====================-->
+    <header class="page-header">
+      <div class="container page-header__container">
+        <div class="page-header__navigation ">
+                    <nav>
+            <a href="" class="logo logo__tablet link">
               <span style="color: #2196f3">Web</span
               ><span style="color: #000000">Studio</span>
             </a>
           </nav>
+          <button type="button" class="open-mobile-menu-btn" data-menu-open> 
+            <svg
+                class="open-mobile-menu-btn__icon">
+                <use href="./images/sprite.svg#icon-burger"></use>
+              </svg>
+          </button> 
           <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link link" href="https://yaroslav-strilko.github.io/goit-markup-hw-07/portfolio.html">Студія</a>
+            <li >
+              <a class="menu__link link" href="./index.html">Студія</a>
             </li>
-            <li class="menu-item-here">
-              <a class="menu-link-here link" href="">Портфоліо</a>
+            <li class="menu__item--here">
+              <a class="link menu__link menu__link--here" href="">Портфоліо</a>
             </li>
             <li>
-              <a class="menu-link link" href="">Контакти</a>
+              <a class="menu__link link" href="">Контакти</a>
             </li>
           </ul>
         </div>
-        <ul class="contact list">
-          <li class="contact-item contact-item-first">
-            <a class="contact-email-phone link" href="mailto:info@devstudio.com">
+        
+         <ul class="contact list">
+          <li class="contact__item contact__item--first">
+            <a
+              class="contact-email-phone link"
+              href="mailto:info@devstudio.com"
+            >
               <svg
                 class="icon-contact"
                 aria-label="електронна пошта"
@@ -52,7 +66,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
+          <li class="contact__item">
             <a class="contact-email-phone link" href="tel:+380961111111">
               <svg
                 class="icon-contact"
@@ -65,8 +79,59 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+         </ul>
       </div>
+      <!--========== Мобільне меню ========== -->
+      <div class="mobile-menu" data-menu>
+        
+        <div class="conteiner mobile-menu__container" data-menu>
+           <button  class="mobile-menu__close-btn" data-modal-close>
+             <svg class="mobile-menu__close-icon" width="19px" height="19px">
+               <use href="./images/sprite.svg#icon-x"</use>
+             </svg>
+           </button>
+        <!--========== Список мобільного меню ========== -->
+          <div class="mobile-menu__flex">
+          <div class="mobile-menu__flex-container">
+        <ul class="list mobile-menu-list ">
+            <li >
+              <a class="link mobile-menu-list__link  mobile-menu-list__item--here" href="">Студія</a>
+            </li>
+            <li>
+              <a class="link mobile-menu-list__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="link mobile-menu-list__link " href="">Контакти</a>
+            </li>
+          </ul>
+          </div>
+          <!--========== Список контактів мобільного меню ========== -->
+          <div class="mobile-menu__flex-container" >
+          <ul class="list mobile-menu-contact">
+           <li>
+            <a class="link mobile-menu-contact__link-phone" href="tel:+380961111111">
+               +38 096 111 11 11
+            </a>
+            </li>
+           <li><a
+              class="link mobile-menu-contact__link-email"
+              href="mailto:info@devstudio.com">
+               info@devstudio.com</a>
+           </li>
+        </ul>
+           <!--========== Список соціальних контактів мобільного меню ========== -->
+        <ul class="list mobile-menu-social"  >
+          <li class="mobile-menu-social__item"><a class="link mobile-menu-social__link" href="">Instagram</a></li>
+          <li class="mobile-menu-social__item"><a class="link mobile-menu-social__link" href="">Twitter</a></li>
+          <li class="mobile-menu-social__item"><a class="link mobile-menu-social__link" href="">Facebook</a></li>
+          <li class="mobile-menu-social__item-last"><a class="link mobile-menu-social__link" href="">Linkedin</a></li>
+        </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+        
+      
     </header>
   <!-- Головна частина-->
     <main>
@@ -88,7 +153,7 @@
            Веб-сайти
            </button></li>
 
-           <li>
+           <li class="menu-portfolio__drei">
            <button type="button" class="portfolio-button portfolio-button-text">
            Додатки
            </button></li>
@@ -296,7 +361,8 @@
     <!-- Підвал сайту-->
     <footer class="footer">
       <div class="container container-footer">
-        <div>
+        <div class="container-footer__tablet">
+           <div class="container-footer__logo-address " >
           <p class="logo-footer">
             <a href="/" class="logo-footer link">
               <span style="color: #2196f3">Web</span
@@ -328,8 +394,10 @@
               </li>
             </ul>
           </address>
-        </div>
-        <div class="container-social-footer">
+           </div>
+
+            <!-- ==========ПРИЄДНУЙТЕСЬ========= -->
+            <div class="container-social-footer ">
           <h3 class="social-title-footer">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="social-list list">
             <li>
@@ -388,20 +456,19 @@
               </a>
             </li>
           </ul>
+            </div>
         </div>
-      <!-- /* ==========END Іконки соцмереж --- підвал ========== */ -->
+<!-- /* ==========END Іконки соцмереж --- підвал ========== */ -->
 <!-- /* ========== Підпишиться на розсилку --- підвал ========== */ -->
 <div class="subscribe-footer">
           <h3 class="subscribe-form-title">Підпишиться на розсилку</h3>
             <form class="subscribe-form">
                <label class="subscribe-form-field">
-                    <span class="subscribe-form-input-wrapper">
                      <input 
                        type="email" 
                        class="subscribe-form-input"
                        placeholder="E-mail" 
                      />
-                    </span>
                </label>   
                    
            
@@ -414,6 +481,7 @@
 <!-- /* ==========END Підпишиться на розсилку --- підвал ========== */ -->
       </div>
     </footer>
+
      
 
 </body>
