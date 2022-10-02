@@ -186,7 +186,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  display: block;
   transition: box-shadow var(--transition-dur-and-func); /* задаємо фукцію на весь блок для тіні */
 
   &:hover,
